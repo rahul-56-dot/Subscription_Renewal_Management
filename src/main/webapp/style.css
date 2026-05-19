@@ -1,0 +1,390 @@
+/* ===== Modern Animated UI Theme ===== */
+body {
+    background: linear-gradient(135deg, #0f172a, #020617);
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+    color: #e5e7eb;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar {
+    /* width: 90%; */
+/*     max-width: 1000px;
+ */    margin: 0px auto;
+    padding: 8px 10px;
+    background-color: rgba(255, 255, 255, 0.05); /* transparent */
+    /* border-radius: 25px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* slight shadow for visibility */
+    backdrop-filter: blur(40px); /* blur background for better readability */
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #00ffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 10;
+    height: 2px;
+    background: #38bdf8;
+    bottom: -6px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Container */
+.container {
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #f8fafc;
+}
+.sub-container {
+	width: 450px;
+	margin: 90px auto;
+	background: #00ffff;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+	animation: fadeIn 0.7s ease-in-out;
+} /* Headings */
+.sub-container h2  {
+	text-align: center;
+	color: #1a0968;
+	margin-top:3px;
+	margin-bottom: 15px;
+	font-size: 36px;
+}
+.sub-container p {
+	text-align: center;
+	color: #1a0968;
+	margin-bottom: 10px;
+	font-size: large;
+}
+/* Inputs */
+input {
+	width: 90%;
+	padding: 15px;
+	margin: 15px 5px;
+	margin-top:2px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	outline: none;
+	transition: 0.3s;
+}
+
+input:focus {
+	border-color: #667eea;
+	box-shadow: 0 0 5px rgba(102, 126, 234, 0.5);
+} /* Buttons */
+button {
+	width: 99%;
+	padding: 15px;
+	margin-top: 10px;
+	background: linear-gradient(90deg, #667eea, #764ba2);
+	color: white;
+	border: none;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+} /* Links */
+.link {
+	text-align: center;
+	margin-top: 15px;
+}
+.current-container{
+	width: 450px;
+	margin: 90px auto;
+	background: white;
+	padding: 30px;
+	border-radius: 12px;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+	animation: fadeIn 0.7s ease-in-out;
+}
+.current-container h2 {
+color: black;
+	}
+.current-container h3 {
+	color: black;
+}
+.current-container p {
+	color: black;
+}
+.link a {
+	text-decoration: none;
+	color: #667eea;
+	font-weight: 500;
+} /* Cards (OTT Plans) */
+.card {
+	background: white;
+	width: 260px;
+	display: inline-block;
+	margin: 20px;
+	padding: 25px;
+	border-radius: 15px;
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+	text-align: center;
+	transition: 0.3s;
+}
+
+.card:hover {
+	transform: scale(1.05);
+} /* Card Title */
+.card h3 {
+	color: #764ba2;
+	margin-bottom: 10px;
+} /* Card Price */
+.card p {
+	font-size: 14px;
+	color: #555;
+} /* Fade Animation */
+@keyframes fadeIn {
+	from { opacity:0;
+	transform: translateY(20px);
+}
+
+to {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+} /* Dashboard */
+.dashboard {
+	text-align: center;
+	padding: 50px 20px;
+}
+
+.dashboard h2 {
+	color: white;
+	margin-bottom: 30px;
+} /* OTT Cards Container */
+.ott-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 30px;
+} /* OTT Card */
+.ott-card {
+	background: white;
+	width: 260px;
+	padding: 25px;
+	border-radius: 18px;
+	box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+	transition: 0.3s;
+}
+
+.ott-card:hover {
+	transform: translateY(-8px);
+} /* OTT Logo */
+.ott-card img {
+	width: 90px;
+	height: auto;
+	margin-bottom: 15px;
+} /* OTT Title */
+.ott-card h3 {
+	color: #333;
+	margin-bottom: 8px;
+} /* OTT Description */
+.ott-card p {
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 20px;
+} /* OTT Button */
+.ott-btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background: linear-gradient(90deg, #667eea, #764ba2);
+	color: white;
+	text-decoration: none;
+	border-radius: 25px;
+	font-size: 14px;
+	transition: 0.3s;
+}
+
+.ott-btn:hover {
+	box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+    font-size: 16px;
+    color: #94a3b8;
+    margin-bottom: 50px;
+}
+
+/* Slider */
+/* ===== Image Slider ===== */
+.slider {
+    width: 60%;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+}
+
+.slides {
+    display: flex;
+    width: 300%;                 /* 3 slides */
+    animation: slideMove 30s infinite ease-in-out;
+}
+
+.slides img {
+    width: calc(100% / 3);       /* 🔥 THIS IS THE FIX */
+    height: 450px;
+    object-fit: cover;           /* fills perfectly */
+    flex-shrink: 0;
+    display: block;
+}
+
+
+
+
+/* Animation/*  */
+@keyframes slideMove {
+    /* Slide 1 */
+    0%   { transform: translateX(0%); }
+    30%  { transform: translateX(0%); }
+
+    /* Slide 2 */
+    33%  { transform: translateX(-33.333%); }
+    63%  { transform: translateX(-33.333%); }
+
+    /* Slide 3 */
+    66%  { transform: translateX(-66.666%); }
+    100% { transform: translateX(-66.666%); }
+}
+
+.ott-card {
+    width: 280px;
+    background-color: silver;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ott-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.3);
+}
+
+.ott-card .ott-image {
+    width: 100%;
+    height: 220px; /* larger image */
+    overflow: hidden;
+}
+
+.ott-card .ott-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: content; /* ensures image covers the box */
+    transition: transform 0.5s;
+}
+
+.ott-card:hover .ott-image img {
+    transform: scale(1.2); /* slight zoom on hover */
+}
+
+.ott-card .ott-content {
+    padding: 15px;
+    text-align: center;
+}
+
+.ott-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1.3em;
+    color: #333;
+}
+
+.ott-card h5 {
+    margin: 5px 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.ott-card p {
+    font-size: 0.95em;
+    color: #555;
+    margin: 10px 0 15px;
+}
+
+.ott-card .ott-btn {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #ff3d00;
+    color: #fff;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.ott-card .ott-btn:hover {
+    background-color: #ff6d42;
+    transform: scale(1.05);
+}
+/* Manage OTT table text colors */
+.sub-container .styled-table {
+    max-width: 1000px;    /* Optional: limit max width */
+    margin: 2px auto;       /* Center it */
+}
+.sub-container .styled-table th {
+    color: black;  
+    background: #00ffff;    /* Dark header background */
+}
+
+.sub-container .styled-table td {
+    color: black;  
+    background: #00ffff;            /* Row text color */
+}
+
+/* Delete link color */
+.sub-container .styled-table a {
+    color: #ef4444;              /* Red delete */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.sub-container .styled-table a:hover {
+    color: #dc2626;
+    text-decoration: underline;
+}
+
+
+ 

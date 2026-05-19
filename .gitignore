@@ -1,0 +1,42 @@
+# Java Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Build directories
+target/
+build/
+bin/
+out/
+
+# Eclipse project files (optional to ignore, but recommended to keep repo clean)
+# If your team specifically needs Eclipse configuration files, you can comment these out:
+.metadata/
+.settings/
+.classpath
+.project
+*.tmp
+*.bak
+*.swp
+
+# IntelliJ IDEA project files
+.idea/
+*.iml
+*.iws
+
+# VS Code project files
+.vscode/
+
+# OS-specific files
+Thumbs.db
+Desktop.ini
+.DS_Store

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="navbar">
+		<div class="logo">Admin Panel</div>
+		<ul class="nav-links">
+			<li><a href="DashboardController">Dashboard</a></li>
+
+			<li><a href="admin.html">Logout</a></li>
+		</ul>
+	</div>
+
+	<div class="dashboard">
+		<h2>Admin Dashboard</h2>
+
+		<div class="ott-container">
+			<!--   <div class="ott-card">
+            <h3>Manage OTT Platforms</h3>
+            <p>Add / Remove OTT Applications</p>
+            <a href="manage-ott.html" class="ott-btn">Open</a>
+        </div>
+
+        <div class="ott-card">
+            <h3>Manage Subscription Plans</h3>
+            <p>Add / Update / Delete Plans</p>
+            <a href="manage-plans.html" class="ott-btn">Open</a>
+        </div> -->
+
+			<!-- ✅ NEW CARD -->
+			<div class="ott-container">
+
+				<!-- Manage OTT Platforms -->
+				<form action="manageOtt">
+					<div class="ott-card">
+						<h3>Manage OTT Platforms</h3>
+						<p>Add / Update / Delete OTT Apps</p>
+						<!--         <a href="manage-ott.jsp" class="ott-btn">Open</a>
+ -->
+						<button type="submit">open</button>
+
+					</div>
+				</form>
+				<!-- Manage OTT Plans -->
+				<div class="ott-card">
+					<h3>Manage OTT Plans</h3>
+					<p>Add / Update / Delete Plans</p>
+					<a href="manage-plans.html" class="ott-btn">Open</a>
+				</div>
+
+				<!-- User Subscriptions -->
+				<div class="ott-card">
+					<form action="adminDashboard" method="get">
+						<h3>User Subscriptions</h3>
+						<p>Check plans & expiry</p>
+						<button class="ott-btn">Open</button>
+					</form>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+
+</body>
+</html>
